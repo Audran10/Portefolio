@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Expérience en entreprise</h1>
+        <div class="row mt-3">
+            {% for dossier in dossiers %}
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <img src="{{ dossier.image }}" class="card-img-top" alt="{{ dossier.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">{{ dossier.title }}</h5>
+                            <div class="d-flex justify-content-center">
+                                <a href="{{ url_for('dossier', dossier_id=dossier.id) }}" class="btn btn-primary">Voir le détail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Section "Derniers articles" -->
+    <div class="container mt-5">
+        <h1>Derniers articles</h1>
+        <div class="row mt-3">
+            {% for article in latest_articles %}
+                <div class="col-md-4 mb-4">
+                    <div class="card rounded shadow">
+                        <img src="{{ article.image_title }}" class="card-img-top" alt="{{ article.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">{{ article.title }}</h5>
+                            <div class="d-flex justify-content-center">
+                                <a href="{{ url_for('post_detail', article_id=article.id) }}" class="btn btn-primary">Lire l'article</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

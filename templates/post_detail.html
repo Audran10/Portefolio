@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>{{ article.title }}</h1>
+        <p>Date: {{ article.date }}</p>
+        <!-- Contenu détaillé de l'article -->
+        {% autoescape false %}
+            {{ article.content | safe }}
+        {% endautoescape %}
+    </div>
+{% endblock %}
+

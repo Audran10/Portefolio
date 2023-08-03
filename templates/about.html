@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mb-4">Ma présentation :</h1>
+                <p>Je m'appelle Audran Latorre, j'ai 19 ans à l'heure où j'écris ces lignes et je suis étudiant à Bordeaux Ynov Campus. Je suis une personne qui est toujours dans l'envie d'apprendre et très perfectionniste. Hormis le fait que j'aime le sport qui est une importance capitale pour moi, j'ai toujours eu un attrait pour les jeux vidéos et l'informatique en général. Ce monde qui est en constante évolution et qui s'adapte toujours aux besoins des gens me fascine. C'est ce qui m'a emmené à faire mon stage de 3ème dans une entreprise dans l'informatique et c'est ce que vous verrez ci dessous avec la présentation de mon parcours.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="{{ url_for('static', filename='Audran.png') }}" alt="CV d'Audran" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h1>Mon parcours :</h1>
+                <p>Depuis plusieurs années, je suis attiré par le monde virtuel, une passion qui a commencé lors de mon stage de 3ème au sein de l'entreprise CapInfo. Cette expérience m'a éclairé sur ma voie, et il était évident que l'informatique était la voie à suivre pour mon avenir. Ainsi, j'ai choisi de me spécialiser en numérique et sciences informatiques durant mes années de première et de terminale.</p>
+                <p>Ces deux années riches en apprentissages et l'obtention de mon bac ont solidifié mon intérêt pour l'informatique, ce qui m'a tout naturellement conduit à rejoindre Ynov, mon école actuelle. À présent en troisième année de bachelor, j'ai eu l'occasion de découvrir tous les aspects de ce domaine en constante évolution.</p>
+                <p>Mais je n'ai pas vu que le côté théorique avec mon école durant mes 2 années d'études. J'ai également fait 2 stages, un de 6 semaines chez Wedrivit à la fin de ma première année qui m'a permis d'en apprendre un peu plus sur le React qui est un framework Javascript et un stage de 2 mois et demi chez FLOA Bank à la fin de ma deuxième année qui m'a permis également d'approfondir mes connaissances sur le JavaScript avec cette fois-ci du Vue.JS. Le stage chez Wedrivit m'a permis de découvrir un peu plus précisément le développement web en front et le stage à FLOA pour approfondir encore la découverte du front ainsi que les bonnes pratiques en entreprise.</p>
+                <p>Mon attrait pour la créativité, mon souci du détail et mon désir d'excellence m'ont guidé vers une spécialisation dans le développement, plus précisément dans le développement web. C'est ainsi que je me réalise pleinement dans cette voie, déterminé à perfectionner mes compétences pour apporter ma contribution au monde numérique en perpétuelle expansion.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
