@@ -48,7 +48,7 @@ articles = [
 @app.route('/')
 def index():
     latest_articles = articles[:3]
-    return render_template('home.html', dossiers=dossiers, latest_articles=latest_articles)
+    return render_template('index.html', dossiers=dossiers, latest_articles=latest_articles)
 
 @app.route('/dossier/<int:dossier_id>')
 def dossier(dossier_id):
